@@ -25,9 +25,14 @@
       text-align: center;
       color: white;
     }
+    .pricing-card {
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
     .pricing-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
     }
     .bg-primary-custom {
       background-color: #3490dc;
@@ -53,6 +58,29 @@
     }
     .feature-card:hover {
       transform: translateY(-10px);
+    }
+    .pricing-card-body {
+      padding: 30px;
+    }
+    .pricing-card ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .pricing-card ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .pricing-card a {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border-radius: 50px;
+      background-color: #fff;
+      color: inherit;
+      transition: background-color 0.3s ease;
+    }
+    .pricing-card a:hover {
+      background-color: #3490dc;
+      color: white;
     }
   </style>
 </head>
@@ -168,46 +196,6 @@
     </div>
   </section>
 
-  <!-- Team Section -->
-  <section id="team" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="display-4">Meet Our Team</h2>
-      <p class="lead">Our passionate team of designers and developers.</p>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Team Member 1 -->
-        <div class="col">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 1">
-            <div class="card-body">
-              <h5 class="card-title">John Doe</h5>
-              <p class="card-text">Lead Developer</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 2">
-            <div class="card-body">
-              <h5 class="card-title">Jane Smith</h5>
-              <p class="card-text">UX/UI Designer</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 3">
-            <div class="card-body">
-              <h5 class="card-title">Sara Lee</h5>
-              <p class="card-text">SEO Specialist</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Pricing Section -->
   <section id="pricing" class="py-5 bg-light">
     <div class="container text-center">
@@ -217,7 +205,7 @@
         <!-- Basic Plan -->
         <div class="col">
           <div class="card pricing-card bg-primary-custom text-white">
-            <div class="card-body">
+            <div class="card-body pricing-card-body">
               <h5 class="card-title">Basic Plan</h5>
               <p class="card-text">$500</p>
               <ul>
@@ -232,7 +220,7 @@
         <!-- Pro Plan -->
         <div class="col">
           <div class="card pricing-card bg-secondary-custom text-white">
-            <div class="card-body">
+            <div class="card-body pricing-card-body">
               <h5 class="card-title">Pro Plan</h5>
               <p class="card-text">$1000</p>
               <ul>
@@ -247,7 +235,7 @@
         <!-- Enterprise Plan -->
         <div class="col">
           <div class="card pricing-card bg-accent-custom text-white">
-            <div class="card-body">
+            <div class="card-body pricing-card-body">
               <h5 class="card-title">Enterprise Plan</h5>
               <p class="card-text">$2500</p>
               <ul>
