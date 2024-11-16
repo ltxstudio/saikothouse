@@ -38,6 +38,22 @@
     .bg-accent-custom {
       background-color: #fbbf24;
     }
+    .icon-box {
+      font-size: 40px;
+      color: #3490dc;
+      margin-bottom: 20px;
+    }
+    .feature-card {
+      background: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
   </style>
 </head>
 <body>
@@ -56,6 +72,7 @@
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -68,6 +85,46 @@
       <h1 class="display-4">Bringing Your Vision to Life Online</h1>
       <p class="lead">We create stunning, responsive websites that represent your brand.</p>
       <a href="#contact" class="btn btn-lg btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="display-4">Our Services</h2>
+      <p class="lead">Tailored solutions for your business needs.</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Service 1 -->
+        <div class="col">
+          <div class="feature-card">
+            <div class="icon-box">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h4>Web Development</h4>
+            <p>Build dynamic and scalable websites tailored to your business needs.</p>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col">
+          <div class="feature-card">
+            <div class="icon-box">
+              <i class="fas fa-search"></i>
+            </div>
+            <h4>SEO Optimization</h4>
+            <p>Improve your website's visibility and ranking on search engines.</p>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col">
+          <div class="feature-card">
+            <div class="icon-box">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h4>UI/UX Design</h4>
+            <p>Design beautiful and intuitive user interfaces to enhance the experience.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -104,6 +161,46 @@
             <div class="card-body">
               <h5 class="card-title">Project 3</h5>
               <p class="card-text">A creative portfolio website for an artist.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="display-4">Meet Our Team</h2>
+      <p class="lead">Our passionate team of designers and developers.</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Team Member 1 -->
+        <div class="col">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">Lead Developer</p>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 2">
+            <div class="card-body">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">UX/UI Designer</p>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 3">
+            <div class="card-body">
+              <h5 class="card-title">Sara Lee</h5>
+              <p class="card-text">SEO Specialist</p>
             </div>
           </div>
         </div>
